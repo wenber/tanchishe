@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<title>毕业设计答辩</title>
+<meta name="author" content="liuming">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="css layout preview">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, minimal-ui">
+
+<link rel="stylesheet" href="skin/reveal.css">
+<link rel="stylesheet" href="skin/sky.css" id="theme">
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="skin/zenburn.css">
+<link rel="stylesheet" href="skin/icon-github.css">
+
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+
+<style>
+.summary .line{
+    overflow: hidden;
+    white-space: nowrap;
+}
+.summary .line a {
+    display: table-cell;
+    vertical-align: middle;
+    width: 180px;
+    text-align: center;
+}
+.summary img{
+  border-radius:50%;
+  box-shadow:0 0 5px rgba(0,0,0,.3);
+}
+.summary .content{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
+    text-align: left;
+    overflow: hidden;
+    *zoom:1;
+}
+.summary li{
+  white-space: nowrap;
+}
+.powered {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    color: #555;
+}
+
+.powered p {
+    margin: 6px auto;
+}
+
+.powered a {
+    color: #555;
+}
+.reveal[data-background-transition=slide]>.backgrounds .slide-background, .reveal>.backgrounds .slide-background[data-background-transition=slide] {
+    background-size: 80%;
+    background-position: 50% 30px;
+}
+.reveal .author {
+    margin-top: 100px;
+}
+.reveal .title {
+    margin-top: 60px;
+}
+
+.fade-box{
+    position: relative;
+    min-height: 500px;
+}
+.fade-box img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto !important;
+}
+
+.mux-logo {
+    position: fixed;
+    z-index: 999;
+    left: 20px;
+    top: 20px;
+}
+xmp{
+  padding:8px 20px;
+  border-radius:5px;
+  background:#333;
+  color:#fff;
+  font-family:georgia;
+  text-align:left;
+}
+</style>
+<script src="skin/jquery-2.js"></script>
+<script src="skin/socket.js"></script>
+</head>
+
+<body style="transition: -moz-transform 0.8s ease 0s;">
+
+  <div data-background-transition="default" data-transition-speed="default" class="reveal concave center">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div style="width: 960px; height: 700px; transform: translate(-50%, -50%) scale(1) translate(50%, 50%);" class="slides">
+      <section class="present" style="top: -276.5px; display: block;" data-background-transition="slide" data-background="img/iOS7-icon-grid.svg">
+        <h3 class="title">毕业设计答辩</h3>
+        <h2 class="title">JavaScript贪吃蛇游戏<span style="font-size:30px;">(基于jQuery框架)</span></h2>
+        <p data-fragment-index="0" class="author fragment visible">
+          By刘明  2010073020001
+        </p>
+      </section>
+
+      <section class="future" style="top: -324px; display: block;" data-previous-indexv="2" hidden="">
+        <h2>主要内容</h2>
+        <div class="summary">
+          <div data-fragment-index="0" class="line fragment">
+            <div class="content">
+              <p>1，DOM模型和BOM模型</p>              
+            </div>
+          </div>
+          <div data-fragment-index="1" class="line fragment">
+            <div class="content">
+                 <p>2，贪吃蛇游戏的实现</p>
+            </div>
+          </div>
+          <div data-fragment-index="2" class="line fragment">
+            <div class="content">
+                  <p>3，HTML5和Nodejs的热潮</p>
+            </div>
+          </div>
+           <div data-fragment-index="3" class="line fragment">
+            <div class="content">
+                   <p>4，自动化管理工具及其Github</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="future" style="top: -78px; display: block;" hidden="">
+        <h4>你所看到的BOM</h4>
+         <p data-fragment-index="1" class="fragment">
+          <img src="image/bom.png" width="600" height="500" />
+        </p>
+      </section>
+
+      <section class="future" style="top: -78px; display: block;" hidden="">
+        <h4>其实是这样的</h4>
+        <p data-fragment-index="1" class="fragment">
+          <img src="image/bom1.png" width="600" height="500" />
+        </p>
+      </section>
+
+      <section class="future" style="top: -350px; display: none;" hidden="">
+         <h4>你所看到的DOM</h4>
+         <p data-fragment-index="1" class="fragment">
+          <img src="image/dom.png" width="600" height="500" />
+        </p>
+      </section>
+
+      <section class="future" style="top: -350px; display: none;" hidden="">
+         <h4>其实是这样的</h4>
+         <p data-fragment-index="1" class="fragment">
+          <img src="image/dom1.png" width="600" height="500" />
+        </p>
+      </section>
+
+      <section class="future" style="top:-200px; display: block;" hidden="">
+        <h4>进入正题，贪吃蛇游戏的实现</h4>
+        <p data-fragment-index="1" class="fragment">
+          <img  class="fragment" src="image/tan.png"  width="800px" height="500px" /></p>
+      </section>
+
+      <section class="future" style="top: -78px; display: block;" hidden="">
+        <h2>你用过哪些大招？</h2>
+      </section>
+
+      <section class="future" style="top: -350px; display: none;" hidden="">
+        <h2>行内不定行文本垂直对齐</h2>
+        <p data-fragment-index="0" class="fragment">
+          <img src="image/table.png" alt="模拟table"></p>
+      </section>
+
+      <section class="future" style="top: -350px; display: none;" hidden="">
+        <h2>Solutions: table布局</h2>
+        <p><a href="demo/table-tag.html" target="_blank">demo</a></p>
+        <div class="fade-box">
+          <code>
+            <xmp>th,td{ vertical-align:middle;}</xmp>
+          </code>
+        </div>
+      </section>
+
+      <section class="future" style="top: -350px; display: none;" hidden="">
+        <h2>Solutions: css table</h2>
+        <p><a href="demo/table-css.html" target="_blank">demo</a></p>
+        <div class="fade-box">
+          <code>
+            <xmp>.demo ul{ display:table;}
+                .demo li{  display:table-row;}
+                .demo div{  display:table-cell;  vertical-align:middle; }
+              </xmp>
+            </code>
+        </div>
+      </section>
+
+      <section class="future" style="top: -78px; display: block;" hidden="">
+        <h2>有什么问题？</h2>
+      </section>
+
+      <section class="future" style="top: -350px; display: none;" hidden="">
+        <h2>Solutions: 单独补白控制</h2>
+        <p><a href="demo/table-class.html" target="_blank">demo</a></p>
+        <div class="fade-box">
+          <code>
+            <xmp>.p1{padding-top:20px;}
+                .p2{padding-top:30px;}
+                .p3{padding-top:40px;}
+            </xmp>
+          </code>
+        </div>
+      </section>
+
+      <section class="future" style="top: -78px; display: block;" hidden="">
+        <h2>有什么问题？</h2>
+      </section>
+
+      <section class="future" style="top: -350px; display: block;" hidden="">
+        <h2>水平垂直居中的弹层</h2>
+        <p data-fragment-index="0" class="fragment">
+          <img data-fragment-index="0" class="fragment" src="image/popup.png" alt="childwindow"></p>
+      </section>
+
+      <section class="future" style="top: -350px; display: none;" hidden="">
+        <h2>Solutions: absolute + 负margin</h2>
+        <p><a href="demo/popup-1.html" target="_blank">demo</a></p>
+        <div class="fade-box">
+          <code>
+            <xmp>.demo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin: -100px 0 0 -100px;
+}</xmp>
+          </code>
+        </div>
+      </section>
+
+      <section class="future" style="top: -78px; display: block;" hidden="">
+        <h2>有什么问题？</h2>
+      </section>
+
+      <section class="future" style="top: -350px; display: none;" hidden="">
+        <h2>Solutions: css table</h2>
+        <p><a href="demo/popup-2.html" target="_blank">demo</a></p>
+        <div class="fade-box">
+          <code>
+            <xmp>.demo{
+  display:table;
+}
+.demo .test{
+  display:table-cell;
+  vertical-align:middle;
+}</xmp>
+          </code>
+        </div>
+      </section>
+
+      <section class="future" style="top: -78px; display: block;" hidden="">
+        <h2>有什么问题？</h2>
+      </section>
+
+       <section class="future" style="top: -350px; display: none;" hidden="">
+        <h2>Solutions: 利用行框特性</h2>
+        <p><a href="demo/popup-3.html" target="_blank">demo</a></p>
+        <div class="fade-box">
+          <code>
+            <xmp>.demo .inner,.demo .after,.demo::after{
+  display:inline-block;
+  *display:inline;
+  *zoom:1;
+  vertical-align:middle;
+}
+.demo .after,.demo:after{
+  width:0;
+  height:100%;
+  content:"\0020";
+}</xmp>
+          </code>
+        </div>
+      </section>
+
+      <section class="future" style="top: -78px; display: block;" hidden="">
+        <h2>有什么问题？</h2>
+      </section>
+
+      <section class="future" style="top: -350px; display: none;" hidden="">
+        <h2>Solutions: flex特性</h2>
+        <p><a href="demo/popup-4.html" target="_blank">demo</a></p>
+        <div class="fade-box">
+          <code>
+            <xmp>.demo{
+  display:flex;
+}
+.demo .inner{
+  align-self:center;
+  margin:auto;
+}</xmp>
+          </code>
+        </div>
+      </section>
+
+      <section class="future" style="top: -78px; display: block;" hidden="">
+        <h2>有什么问题？</h2>
+      </section>
+
+      <section class="future" style="top: -78px; display: block;" hidden="">
+        <h2>举一反三</h2>
+      </section>
+
+      <section class="future" style="top: -350px; display: none;" hidden="">
+        <h2>图片水平垂直居中</h2>
+        <p data-fragment-index="0" class="fragment">
+          <img src="image/imglist.png" alt="居中的图片"></p>
+      </section>
+
+      <section class="future" style="top: -20px; display: none;" hidden="">
+        <h2>Solutions: 利用行框特性</h2>
+        <p><a href="demo/imglist-3.html" target="_blank">demo</a></p>
+      </section>
+
+      <section class="future" style="top: -78px; display: block;" hidden="">
+        <h2>你还曾经怎么做过？</h2>
+      </section>
+
+      <section class="future" style="top: -20px; display: none;" hidden="">
+        <h2>Solutions: 字体大小？</h2>
+        <p><a href="demo/imglist-4.html" target="_blank">demo</a></p>
+      </section>
+
+      <section class="future" style="top: -20px; display: none;" hidden="">
+        <h2>Solutions: 绝对+相对定位？</h2>
+        <p><a href="demo/imglist-5.html" target="_blank">demo</a></p>
+      </section>
+
+      <section class="future" style="top: -78px; display: block;" hidden="">
+        <h2>未来？</h2>
+      </section>
+
+      <section class="future" style="top: -78px; display: block;" hidden="">
+        <h2>may be display: flex;</h2>
+      </section>
+
+      <section class="future" style="top: -78px; display: block;" hidden="">
+        <h2>may be position: center;</h2>
+      </section>
+
+      <section class="future" style="top: -78px; display: block;" hidden="">
+        <h2>现在？</h2>
+      </section>
+
+      <section class="future" style="top: -78px; display: block;" hidden="">
+        <h2>line box</h2>
+      </section>
+
+      <section class="future" style="top: -116px; display: block;" hidden="">
+        <h2>Q&amp;A</h2>
+        <h3>Thank You ^_^</h3>
+      </section>
+
+    </div>
+
+    <div class="backgrounds"><div data-background-transition="slide" data-background-hash="img/iOS7-icon-grid.svgnullnullnullnullnullslide" style="background-image: url(&quot;img/iOS7-icon-grid.svg&quot;);" class="slide-background present"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div></div><div style="display: block;" class="progress"><span style="width: 0px;"></span></div><aside style="display: block;" class="controls"><div class="navigate-left fragmented enabled"></div><div class="navigate-right enabled"></div><div class="navigate-up"></div><div class="navigate-down"></div></aside><div class="slide-number"></div><div class="state-background"></div><div class="pause-overlay"></div></div>
+
+    <div class="powered">
+      <p>毕业设计答辩</p>
+      <p>
+        <a href="tanchishe.html" target="_blank">JavaScript贪吃蛇游戏</a>
+      </p>
+    </div>
+
+    <script src="skin/head.js"></script>
+    <script src="skin/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+          controls: true,
+          progress: true,
+          history: true,
+          center: true,
+          mouseWheel: false,
+          keyboard: true,
+
+          theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+          transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
+
+          // Parallax scrolling
+          // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+          // parallaxBackgroundSize: '2100px 900px',
+
+          // Optional libraries used to extend on reveal.js
+          dependencies: [
+              { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+              { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+              { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          ]
+      });
+
+      $('canvas').on('click', function(){
+        socket.emit('clear');
+      });
+    </script>
+    <script src="skin/highlight.js"></script>
+    <script src="skin/zoom.js"></script>
+    <script src="skin/notes.js"></script>
+</body>
+</html>

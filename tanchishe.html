@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=UTF-8" />
+	<title>毕业设计之贪吃蛇游戏</title>
+	<link rel="stylesheet" type="text/css" href="skin/master.css" />
+	<script src="skin/jquery.js" defer sync="true" type="text/javascript"></script>
+	<script src="skin/master.js" defer sync="true" type="text/javascript"></script>
+</head>
+<body>
+	<div id="page" class="clearfix">
+		<!-- 游戏区域 -->
+		<div id="snake-grid"></div>
+
+
+		<div id="control-panel">
+			<h2 id="game-state">游戏停止</h2>
+			<div class="row score clearfix"><span>当前得分: </span><strong id="score-num">0</strong></div>
+
+			<div class="row score clearfix"><span>基础速度: </span><span id="speed-num">0</span><span>毫秒 / 格</span></div>
+			<div class="row">
+				<select id="select-gridRowNum">
+					<option value="30">30</option>
+					<option value="20">20</option>
+					<option value="10">10</option>
+				</select>
+				<span>行</span>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<select id="select-gridColNum">
+					<option value="30">30</option>
+					<option value="20">20</option>
+					<option value="10">10</option>
+				</select>
+				<span>列</span>
+			</div>
+			<div class="row">
+				<span>初始速度</span>
+				<select id="select-speed">
+					<option value="1000">1000</option>
+					<option value="900">900</option>
+					<option value="800">800</option>
+					<option value="700">700</option>
+					<option value="600">600</option>
+					<option value="500">500</option>
+					<option value="400">400</option>
+					<option value="300" selected="selected">300</option>
+					<option value="200">200</option>
+					<option value="100">100</option>
+					<option value="50">50</option>
+				</select>
+				<span>毫秒 / 格</span>
+			</div>
+			<div class="row buttons clearfix">
+				<a id="start-game" class="btn" href="#">新游戏</a>
+				<a id="pause-game" class="btn disabled" href="#">暂停</a>
+				<a id="stop-game" class="btn disabled" href="#">停止</a>
+			</div>
+			<p id="help">
+				<span class="box food"></span><span>食物(1分)</span>
+        		<span class="box skate"></span><span>滑板(3分)</span>
+        		<span class="box brake"></span><span>刹车(2分)</span>
+        	</p>
+
+			<p>注意说明：</p>
+			<p>1长按方向键，可以加快蛇的移动。</p>
+			<p>2食物会使减少每格通过时间10毫秒。</p>
+			<p>3滑板会使减少每格通过时间30毫秒。</p>
+			<p>4刹车会使增加每格通过时间30毫秒。</p>
+				</div><!-- end control-panel -->
+	</div>
+</body>
+</html>

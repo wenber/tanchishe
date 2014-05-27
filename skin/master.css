@@ -1,0 +1,158 @@
+.clearfix:before, .clearfix:after {
+	content: '.';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: #eeeeee;
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #000;
+}
+a {
+	color: #0088cc;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+#page {
+	margin: 0 auto;
+	padding: 50px 0 0 0;
+	width: 960px;
+}
+#snake-grid {
+	float: left;
+	padding: 1px;
+	border: 1px solid #000;
+}
+#snake-grid .row {
+}
+#snake-grid .row .col {
+	float: left;
+	margin: 1px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+}
+#snake-grid .row .col.on {
+	background:#39c;
+}
+#snake-grid .row .col.yellow {
+	background:yellow;
+}
+#snake-grid .row .col.gray {
+	background:gray;
+}
+
+#snake-grid .row .col.food {background:#093;}
+#snake-grid .row .col.brake {background:#f00;}
+#snake-grid .row .col.skate {background:#00f;}
+
+#control-panel {
+	float: right;
+	padding: 20px 10px 0 10px;
+	width: 270px;
+	height: 600px;
+	border: 1px solid #000;
+}
+h2 {
+	margin: 0 0 30px 0;
+	text-align: center;
+	font-size: 30px;
+}
+#control-panel .row {
+	margin-bottom: 10px;
+}
+#control-panel .score {
+	margin-bottom: 20px;
+}
+#control-panel .score span {
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+#control-panel .score strong {
+	display: block;
+	float: left;
+	font-size: 50px;
+	color: green;
+}
+
+#speed-num {
+	display: block;
+	font-size: 20px;
+	color: green;
+}
+
+#control-panel .buttons .btn {
+	display: block;
+	float: left;
+	background:url(../image/a.png) no-repeat;
+	color: #fff;
+	width:66px;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	text-decoration: none;
+}
+#control-panel .buttons .btn.disabled {
+	background: #888;
+	cursor: default;
+}
+#pause-game {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#help{overflow: hidden;}
+#help span {float:left; margin-right:2px}
+#help .box {width:13px; height:13px; margin-right:5px; border:1px solid white}
+.food {background:#093}
+.brake {background:#f00}
+.skate {background:#00f}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
