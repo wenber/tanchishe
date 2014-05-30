@@ -14,11 +14,9 @@
 
 	//---------------------------ControlBord start-----------------------------------
 	function ControlBord() {};
-
 	ControlBord.prototype.init = function() {
 		this.bindEvent();
 	};
-
 	ControlBord.prototype.bindEvent = function() {
 		//事件代理
 		$(document).delegate('#start-game', "click", function(event) {
@@ -50,11 +48,8 @@
 			});
 	};
 	//--------------------------------ControlBord end-----------------------------------------
-
 	//--------------------------------EventControl start-----------------------------------------
-
 	var EventControl = {};
-
 	$(EventControl).bind({
 		startNewGame: function() {
 			//自定义行列数和速度
@@ -106,15 +101,9 @@
 			$("#stop-game").addClass("disabled");
 		}
 	});
-
-
-
 	//--------------------------------EventControl end-----------------------------------------
-
-
 	//--------------------------------Snake start-----------------------------------------
 	function Snake() {};
-
 	/**
 	 * @description 初始化蛇身
 	 */
